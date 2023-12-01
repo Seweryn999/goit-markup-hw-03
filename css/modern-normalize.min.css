@@ -1,262 +1,206 @@
-/*! modern-normalize v2.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
-
-/*
-Document
-========
-*/
-
-/**
-Use a better box model (opinionated).
-*/
-
-*,
-::before,
-::after {
-  box-sizing: border-box;
-}
-
-html {
-  /* Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3) */
-  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji';
-  line-height: 1.15; /* 1. Correct the line height in all browsers. */
-  -webkit-text-size-adjust: 100%; /* 2. Prevent adjustments of font size after orientation changes in iOS. */
-  -moz-tab-size: 4; /* 3. Use a more readable tab size (opinionated). */
-  tab-size: 4; /* 3 */
-}
-
-/*
-Sections
-========
-*/
-
+/* Ogólne stylizacje */
 body {
-  margin: 0; /* Remove the margin in all browsers. */
-}
-
-/*
-Grouping content
-================
-*/
-
-/**
-1. Add the correct height in Firefox.
-2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
-*/
-
-hr {
-  height: 0; /* 1 */
-  color: inherit; /* 2 */
-}
-
-/*
-Text-level semantics
-====================
-*/
-
-/**
-Add the correct text decoration in Chrome, Edge, and Safari.
-*/
-
-abbr[title] {
-  text-decoration: underline dotted;
-}
-
-/**
-Add the correct font weight in Edge and Safari.
-*/
-
-b,
-strong {
-  font-weight: bolder;
-}
-
-/**
-1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
-2. Correct the odd 'em' font sizing in all browsers.
-*/
-
-code,
-kbd,
-samp,
-pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo,
-    monospace; /* 1 */
-  font-size: 1em; /* 2 */
-}
-
-/**
-Add the correct font size in all browsers.
-*/
-
-small {
-  font-size: 80%;
-}
-
-/**
-Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
-*/
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-/*
-Tabular data
-============
-*/
-
-/**
-1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
-2. Correct table border color inheritance in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
-*/
-
-table {
-  text-indent: 0; /* 1 */
-  border-color: inherit; /* 2 */
-}
-
-/*
-Forms
-=====
-*/
-
-/**
-1. Change the font styles in all browsers.
-2. Remove the margin in Firefox and Safari.
-*/
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
-}
-
-/**
-Remove the inheritance of text transform in Edge and Firefox.
-*/
-
-button,
-select {
-  text-transform: none;
-}
-
-/**
-Correct the inability to style clickable types in iOS and Safari.
-*/
-
-button,
-[type='button'],
-[type='reset'],
-[type='submit']{
-  -webkit-appearance: button;
-}
-
-/**
-Remove the inner border and padding in Firefox.
-*/
-
-::-moz-focus-inner {
-  border-style: none;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
   padding: 0;
 }
 
-/**
-Restore the focus styles unset by the previous rule.
-*/
-
-:-moz-focusring {
-  outline: 1px dotted ButtonText;
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
-/**
-Remove the additional ':invalid' styles in Firefox.
-See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
-*/
-
-:-moz-ui-invalid {
-  box-shadow: none;
+/* Header */
+header {
+  border-bottom: 1px solid #e7e9fc;
 }
 
-/**
-Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
-*/
-
-legend {
-  padding: 0;
+header > div {
+  display: flex;
+  align-items: center;
 }
 
-/**
-Add the correct vertical alignment in Chrome and Firefox.
-*/
-
-progress {
-  vertical-align: baseline;
+/* Kontener wewnątrz headera */
+header > div.container {
+  /* Dodaj dodatkowe style dla kontenera w headerze, jeśli potrzebujesz */
 }
 
-/**
-Correct the cursor style of increment and decrement buttons in Safari.
-*/
-
-::-webkit-inner-spin-button,
-::-webkit-outer-spin-button {
-  height: auto;
+/* Nawigacja */
+nav {
+  display: flex;
+  gap: 40px;
 }
 
-/**
-1. Correct the odd appearance in Chrome and Safari.
-2. Correct the outline style in Safari.
-*/
-
-[type='search'] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
+nav a.link {
+  padding: 24px 0;
+  text-decoration: none;
+  color: inherit;
 }
 
-/**
-Remove the inner padding in Chrome and Safari on macOS.
-*/
-
-::-webkit-search-decoration {
-  -webkit-appearance: none;
+/* Adres */
+address ul {
+  display: flex;
+  gap: 40px;
 }
 
-/**
-1. Correct the inability to style clickable types in iOS and Safari.
-2. Change font properties to 'inherit' in Safari.
-*/
-
-::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
+/* Sekcje */
+section {
+  padding: 96px 0 120px 0;
 }
 
-/*
-Interactive
-===========
-*/
-
-/*
-Add the correct display in Chrome and Safari.
-*/
-
-summary {
-  display: list-item;
+section > div.container {
+  max-width: 496px;
 }
+
+/* Obrazy */
+img {
+  display: block;
+}
+
+/* Przyciski portfolia */
+.portfolio-button {
+  display: flex;
+  gap: 40px;
+}
+
+.portfolio-button button {
+  padding: 12px 24px;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: 1px solid #e7e9fc;
+  background-color: #4d5ae5;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.portfolio-button button:hover,
+.portfolio-button button:focus {
+  border: 1px solid transparent;
+  outline: none;
+}
+
+/* Elementy portfela */
+.list a.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header-list {
+  max-width: 496px;
+}
+
+/* Stopka portfela */
+.footer-portfolio {
+  padding: 96px 0 120px 0;
+}
+
+/* Inne zasady niestandardowe */
+
+/* Trzeci punkt menu z tymi samymi klasami, co pierwszy */
+nav li:nth-child(3) a.link {
+  /* Dodaj specyficzne style dla trzeciego punktu menu tutaj */
+}
+
+/* Stylowanie listy w sekcji Adres */
+address ul {
+  display: flex;
+  gap: 40px;
+}
+
+/* Stylowanie h1 w trzeciej sekcji */
+section:nth-child(3) h1 {
+  /* Dodaj specyficzne style dla h1 w tej sekcji */
+}
+
+/* Stylowanie przycisku w trzeciej sekcji */
+.section-button button {
+  /* Dodaj specyficzne style dla przycisku w tej sekcji */
+}
+
+/* Stylowanie Drugiej Sekcji z paddingiem: 120px 0 */
+section:nth-child(2) {
+  padding: 120px 0;
+}
+
+/* Stylowanie Trzeciej Sekcji z padding-bottom: 120px */
+section:nth-child(3) {
+  padding-bottom: 120px;
+}
+
+section:nth-child(3) h2 {
+  /* Dodaj specyficzne style dla h2 w tej sekcji */
+}
+
+/* Stylowanie Listy w Trzeciej Sekcji */
+section:nth-child(3) ul {
+  display: flex;
+  gap: 24px;
+}
+
+/* Stylowanie Pierwszego Elementu w Liście w Trzeciej Sekcji */
+section:nth-child(3) li:nth-child(1) {
+  width: calc((100% - 72px) / 4);
+}
+
+/* Dodaj specyficzne style dla nagłówka wewnątrz pierwszego elementu listy */
+section:nth-child(3) li:nth-child(1) h3 {
+  /* Dodaj specyficzne style dla nagłówka wewnątrz pierwszego elementu listy */
+}
+
+/* Powtórz powyższy blok dla drugiego, trzeciego i czwartego elementu listy */
+
+/* Stylowanie Listy w Czwartej Sekcji */
+section:nth-child(4) ul {
+  display: flex;
+  gap: 24px;
+}
+
+/* Stylowanie Pierwszego Elementu w Liście w Czwartej Sekcji */
+section:nth-child(4) li:nth-child(1) {
+  width: calc((100% - 72px) / 4);
+}
+
+/* Dodaj specyficzne style dla nagłówka wewnątrz pierwszego elementu listy */
+section:nth-child(4) li:nth-child(1) h3 {
+  /* Dodaj specyficzne style dla nagłówka wewnątrz pierwszego elementu listy */
+}
+
+/* Powtórz powyższy blok dla drugiego, trzeciego i czwartego elementu listy */
+
+/* Stylowanie Listy w Piątej Sekcji */
+section:nth-child(5) ul {
+  display: flex;
+  gap: 24px;
+}
+
+/* Stylowanie Pierwszego Elementu w Liście w Piątej Sekcji */
+section:nth-child(5) li:nth-child(1) {
+  width: calc((100% - 72px) / 4);
+}
+
+/* Dodaj specyficzne style dla nagłówka wewnątrz pierwszego elementu listy */
+section:nth-child(5) li:nth-child(1) h3 {
+  /* Dodaj specyficzne style dla nagłówka wewnątrz pierwszego elementu listy */
+}
+
+/* Powtórz powyższy blok dla drugiego, trzeciego i czwartego elementu listy */
+
+/* Stylowanie Listy w Szóstej Sekcji */
+section:nth-child(6) ul {
+  display: flex;
+  gap: 24px;
+}
+
+/* Stylowanie Pierwszego Elementu w Liście w Szóstej Sekcji */
+section:nth-child(6) li:nth-child(1) {
+  width: calc((100% - 72px) / 4);
+}
+
+/* Dodaj specyficzne style dla nagłówka wewnątrz pierwszego elementu listy */
+section:nth-child(6) li:nth-child(1) h3 {
+  /* Dodaj specyficzne style dla nagłówka wewnątrz pierwszego elementu listy */
+}
+
+/* Powtórz powyższy blok dla drugiego, trzeciego i czwartego elementu listy */
