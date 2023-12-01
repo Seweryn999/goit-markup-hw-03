@@ -55,6 +55,7 @@
 
 .list-class2 {
   gap: 24px;
+  display: flex;
 }
 .li-list-class2 {
   width: calc((100% - 72px) / 4);
