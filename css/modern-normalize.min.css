@@ -1,206 +1,29 @@
-/* Ogólne stylizacje */
-body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
+.header-index {
+  border-bottom: 1px solid #e7e9fc;
 }
-
+.div-header-index {
+  display: flex;
+}
 .container {
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
-
-/* Header */
-header {
-  border-bottom: 1px solid #e7e9fc;
-}
-
-header > div {
+.nav-header-index {
   display: flex;
   align-items: center;
 }
-
-/* Kontener wewnątrz headera */
-header > div.container {
-  /* Dodaj dodatkowe style dla kontenera w headerze, jeśli potrzebujesz */
+.logo link {
+  margin-right: 76px;
 }
-
-/* Nawigacja */
-nav {
+.list {
   display: flex;
   gap: 40px;
 }
-
-nav a.link {
+.li1-nav-header-index {
   padding: 24px 0;
-  text-decoration: none;
-  color: inherit;
 }
-
-/* Adres */
-address ul {
+.ul2-address-header-index {
   display: flex;
   gap: 40px;
 }
-
-/* Sekcje */
-section {
-  padding: 96px 0 120px 0;
-}
-
-section > div.container {
-  max-width: 496px;
-}
-
-/* Obrazy */
-img {
-  display: block;
-}
-
-/* Przyciski portfolia */
-.portfolio-button {
-  display: flex;
-  gap: 40px;
-}
-
-.portfolio-button button {
-  padding: 12px 24px;
-  display: block;
-  min-width: 169px;
-  height: 56px;
-  border: 1px solid #e7e9fc;
-  background-color: #4d5ae5;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.portfolio-button button:hover,
-.portfolio-button button:focus {
-  border: 1px solid transparent;
-  outline: none;
-}
-
-/* Elementy portfela */
-.list a.link {
-  text-decoration: none;
-  color: inherit;
-}
-
-.header-list {
-  max-width: 496px;
-}
-
-/* Stopka portfela */
-.footer-portfolio {
-  padding: 96px 0 120px 0;
-}
-
-/* Inne zasady niestandardowe */
-
-/* Trzeci punkt menu z tymi samymi klasami, co pierwszy */
-nav li:nth-child(3) a.link {
-  /* Dodaj specyficzne style dla trzeciego punktu menu tutaj */
-}
-
-/* Stylowanie listy w sekcji Adres */
-address ul {
-  display: flex;
-  gap: 40px;
-}
-
-/* Stylowanie h1 w trzeciej sekcji */
-section:nth-child(3) h1 {
-  /* Dodaj specyficzne style dla h1 w tej sekcji */
-}
-
-/* Stylowanie przycisku w trzeciej sekcji */
-.section-button button {
-  /* Dodaj specyficzne style dla przycisku w tej sekcji */
-}
-
-/* Stylowanie Drugiej Sekcji z paddingiem: 120px 0 */
-section:nth-child(2) {
-  padding: 120px 0;
-}
-
-/* Stylowanie Trzeciej Sekcji z padding-bottom: 120px */
-section:nth-child(3) {
-  padding-bottom: 120px;
-}
-
-section:nth-child(3) h2 {
-  /* Dodaj specyficzne style dla h2 w tej sekcji */
-}
-
-/* Stylowanie Listy w Trzeciej Sekcji */
-section:nth-child(3) ul {
-  display: flex;
-  gap: 24px;
-}
-
-/* Stylowanie Pierwszego Elementu w Liście w Trzeciej Sekcji */
-section:nth-child(3) li:nth-child(1) {
-  width: calc((100% - 72px) / 4);
-}
-
-/* Dodaj specyficzne style dla nagłówka wewnątrz pierwszego elementu listy */
-section:nth-child(3) li:nth-child(1) h3 {
-  /* Dodaj specyficzne style dla nagłówka wewnątrz pierwszego elementu listy */
-}
-
-/* Powtórz powyższy blok dla drugiego, trzeciego i czwartego elementu listy */
-
-/* Stylowanie Listy w Czwartej Sekcji */
-section:nth-child(4) ul {
-  display: flex;
-  gap: 24px;
-}
-
-/* Stylowanie Pierwszego Elementu w Liście w Czwartej Sekcji */
-section:nth-child(4) li:nth-child(1) {
-  width: calc((100% - 72px) / 4);
-}
-
-/* Dodaj specyficzne style dla nagłówka wewnątrz pierwszego elementu listy */
-section:nth-child(4) li:nth-child(1) h3 {
-  /* Dodaj specyficzne style dla nagłówka wewnątrz pierwszego elementu listy */
-}
-
-/* Powtórz powyższy blok dla drugiego, trzeciego i czwartego elementu listy */
-
-/* Stylowanie Listy w Piątej Sekcji */
-section:nth-child(5) ul {
-  display: flex;
-  gap: 24px;
-}
-
-/* Stylowanie Pierwszego Elementu w Liście w Piątej Sekcji */
-section:nth-child(5) li:nth-child(1) {
-  width: calc((100% - 72px) / 4);
-}
-
-/* Dodaj specyficzne style dla nagłówka wewnątrz pierwszego elementu listy */
-section:nth-child(5) li:nth-child(1) h3 {
-  /* Dodaj specyficzne style dla nagłówka wewnątrz pierwszego elementu listy */
-}
-
-/* Powtórz powyższy blok dla drugiego, trzeciego i czwartego elementu listy */
-
-/* Stylowanie Listy w Szóstej Sekcji */
-section:nth-child(6) ul {
-  display: flex;
-  gap: 24px;
-}
-
-/* Stylowanie Pierwszego Elementu w Liście w Szóstej Sekcji */
-section:nth-child(6) li:nth-child(1) {
-  width: calc((100% - 72px) / 4);
-}
-
-/* Dodaj specyficzne style dla nagłówka wewnątrz pierwszego elementu listy */
-section:nth-child(6) li:nth-child(1) h3 {
-  /* Dodaj specyficzne style dla nagłówka wewnątrz pierwszego elementu listy */
-}
-
-/* Powtórz powyższy blok dla drugiego, trzeciego i czwartego elementu listy */
