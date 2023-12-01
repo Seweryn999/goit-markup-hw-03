@@ -53,7 +53,7 @@
 
 /* Do ukrycia nagłówka używany jest wzorzec .visually-hidden */
 
-.list-class2 {
+.list-class {
   gap: 24px;
   display: flex;
 }
