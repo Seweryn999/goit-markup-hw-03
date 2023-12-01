@@ -63,3 +63,18 @@
 .heading-values {
   margin-bottom: 8px;
 }
+
+/* Sprawdzanie trzeciej sekcji */
+.main-index-section-third {
+  padding-bottom: 120px;
+}
+.header-section-three-index {
+  margin-bottom: 72px;
+}
+.thirdlist-class {
+  display: flex;
+  gap: 24px;
+}
+.firstlistpoint {
+  width: calc((100% - 48px) / 3);
+}
