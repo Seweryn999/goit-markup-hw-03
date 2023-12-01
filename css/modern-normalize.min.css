@@ -50,13 +50,15 @@
 .main-index-section-second {
   padding: 120px 0;
 }
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
+
+/* Do ukrycia nagłówka używany jest wzorzec .visually-hidden */
+
+.list-class2 {
+  gap: 24px;
+}
+.li-list-class2 {
+  width: calc((100% - 72px) / 4);
+}
+.heading-values {
+  margin-bottom: 8px;
 }
