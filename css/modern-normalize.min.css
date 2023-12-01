@@ -20,7 +20,8 @@
   gap: 40px;
 }
 .li1-nav-header-index {
-  padding: 24px 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .ul2-address-header-index {
   display: flex;
