@@ -19,10 +19,29 @@
   display: flex;
   gap: 40px;
 }
+
+/* nie wykrywa tutaj */
 .li1-nav-header-index {
- padding: 24px 0;
+  padding: 24px 0;
 }
 .ul2-address-header-index {
   display: flex;
   gap: 40px;
+}
+
+/* Sprawdzanie pierwszej skecji *MAIN*/
+.main-index-section-first {
+  padding: 188px 0;
+}
+.index-section-first-header {
+  max-width: 496px;
+}
+.button-order-service {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  background-color: #4d5ae5;
+  border-radius: 4px;
+  cursor: pointer;
 }
