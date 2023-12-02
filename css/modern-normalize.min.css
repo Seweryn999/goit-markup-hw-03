@@ -108,6 +108,9 @@
 .footer-portfolio {
   padding: 100px 0;
 }
+
+/* Dla linku, w celu dodania mu właściwości blokowych, 
+w klasie ustawiony jest styl display: inline-block; */
 .footerlogolink {
   display: block;
   margin-bottom: 16px;
@@ -117,4 +120,9 @@
 }
 .footer-p {
   max-width: 264px;
+}
+
+/* PORTFOLIO */
+.portfolioimg {
+  display: block;
 }
