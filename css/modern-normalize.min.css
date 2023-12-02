@@ -103,3 +103,15 @@
 .markscontainerp {
   text-align: center;
 }
+
+/* Sprawdzanie footer */
+.footer-portfolio {
+  padding: 100px 0;
+}
+.footerlogolink {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+.footer-p {
+  max-width: 264px;
+}
