@@ -108,7 +108,8 @@
 .footer-portfolio {
   padding: 100px 0;
 }
-.footerlogolink {
+.footerlogolink,
+.highlight-footer {
   display: inline-block;
   margin-bottom: 16px;
 }
