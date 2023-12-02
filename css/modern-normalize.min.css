@@ -108,10 +108,12 @@
 .footer-portfolio {
   padding: 100px 0;
 }
-.footerlogolink,
+.footerlogolink {
+  display: block;
+  margin-bottom: 16px;
+}
 .highlight-footer {
   display: inline-block;
-  margin-bottom: 16px;
 }
 .footer-p {
   max-width: 264px;
