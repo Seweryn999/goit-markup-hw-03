@@ -207,3 +207,160 @@ button:hover {
 .specialist-item {
   background-color: var(--bg-color);
 }
+.header-index {
+  border-bottom: 1px solid #e7e9fc;
+}
+.div-header-index,
+.container {
+  display: flex;
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.nav-header-index {
+  display: flex;
+  align-items: center;
+}
+.logo-link {
+  margin-right: 76px;
+}
+.list {
+  display: flex;
+  gap: 40px;
+}
+
+/* nie wykrywa tutaj */
+.li1-nav-header-index {
+  padding: 24px 0;
+}
+.ul2-address-header-index {
+  display: flex;
+  gap: 40px;
+}
+
+/* Sprawdzanie pierwszej skecji *MAIN*/
+.main-index-section-first {
+  padding: 188px 0;
+}
+.index-section-first-header {
+  max-width: 496px;
+}
+.button-order-service {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  background-color: #4d5ae5;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Sprawdzanie drugiej sekcji */
+.main-index-section-second {
+  padding: 120px 0;
+}
+
+/* Do ukrycia nagłówka używany jest wzorzec .visually-hidden */
+
+.list-class {
+  gap: 24px;
+  display: flex;
+}
+.li-list-class {
+  width: calc((100% - 72px) / 4);
+}
+.heading-values {
+  margin-bottom: 8px;
+}
+
+/* Sprawdzanie trzeciej sekcji */
+.main-index-section-third {
+  padding-bottom: 120px;
+}
+.header-section-three-index {
+  margin-bottom: 72px;
+}
+.thirdlist-class {
+  display: flex;
+  gap: 24px;
+}
+.firstlistpoint {
+  width: calc((100% - 48px) / 3);
+}
+/* Sprawdzanie czwartej sekcji */
+.section-four-background {
+  padding: 120px 0;
+}
+.header-section-four-index {
+  margin-bottom: 72px;
+}
+.fourthlist {
+  display: flex;
+  gap: 24px;
+}
+.section-four-background-fff {
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+.markguerrero {
+  padding: 32px 0px;
+}
+.heading-values-thirdh {
+  text-align: center;
+  margin-bottom: 8px;
+}
+.markscontainerp {
+  text-align: center;
+}
+
+/* Sprawdzanie footer */
+.footer-portfolio {
+  padding: 100px 0;
+}
+
+/* Dla linku, w celu dodania mu właściwości blokowych, 
+w klasie ustawiony jest styl display: inline-block; */
+.footerlogolink {
+  display: block;
+  margin-bottom: 16px;
+}
+.highlight-footer {
+  display: inline-block;
+}
+.footer-p {
+  max-width: 264px;
+}
+
+/* PORTFOLIO */
+
+/* Sprawdzanie header na stronie Portfolio */
+
+.portfolioheader {
+  border-bottom: 1px solid #e7e9fc;
+}
+.divheaderportfolio {
+  display: flex;
+}
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.navheaderportfolio {
+  display: flex;
+  align-items: center;
+}
+.logoheaderportfolio {
+  margin-right: 76px;
+}
+.ulheaderportflio {
+  display: flex;
+  gap: 40px;
+}
+.firstliheaderportfolio {
+  padding: 24px 0;
+}
+.addressheaderportfolio {
+  display: flex;
+  gap: 40px;
+}
