@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --first-color-text: #434455;
   --second-color-text: #4d5ae5;
@@ -8,10 +13,11 @@
   --background-color1: #2e2f42;
   --background-color2: #f4f4fd;
   --bg-color: #ffffff;
+  --border-bottom-color: #e7e9fc;
 }
 body {
   font-family: 'Roboto', sans-serif;
-  color: var(--SLATE, #434455);
+  color: var(--first-color-text);
   /* Body */
 
   font-size: 16px;
@@ -21,12 +27,77 @@ body {
   letter-spacing: 0.32px;
   background-color: var(--color-white);
 }
-header {
+.header {
   background-color: var(--color-white);
+  border-bottom: 1px solid var(--border-bottom-color);
 }
+
+.header-div {
+  display: flex;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
 .list {
   list-style: none;
 }
+
+.list-flex-gap {
+  display: flex;
+  gap: 40px;
+}
+
+.list-s-two-flex-gap {
+  display: flex;
+  gap: 24px;
+}
+
+.punkt-listy {
+  width: calc((100% - 72px) / 4);
+}
+
+.punkt-listydwa {
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.punkt-listy-trzy {
+  width: calc((100% - 48px) / 3);
+}
+
+.h-three-list-margin {
+  margin-bottom: 8px;
+}
+
+.sthree-padding {
+  padding-bottom: 120px;
+}
+
+.sthree-htwo-margin {
+  margin-bottom: 72px;
+}
+
+.main-menu {
+  display: flex;
+  gap: 40px;
+}
+.menu-padding {
+  padding: 24px 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -42,6 +113,12 @@ button {
   letter-spacing: 0.04em;
   color: var(--color-white);
   cursor: pointer;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  background-color: var(--second-color-text);
+  border-radius: 4px;
 }
 
 .button-order-service:active {
@@ -60,7 +137,6 @@ a:active {
 }
 a:focus {
   color: var(--ocean);
-  background-color: var(--ocean);
 }
 button:hover {
   color: var(--color-white);
@@ -71,8 +147,20 @@ button:hover {
   font-weight: 500;
   color: var(--logo-studio);
 }
+
+.footer-link {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.address {
+  font-style: normal;
+  font-weight: 400;
+}
+
 .link-address {
   color: var(--first-color-text);
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -85,12 +173,13 @@ button:hover {
   color: var(--logo-studio);
 }
 .highlight {
-  color: #2e2f42;
+  color: var(--logo-studio);
 }
 .highlight-footer {
   color: var(--background-color2);
 }
 .logo {
+  margin-right: 76px;
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
   text-decoration: none;
@@ -100,21 +189,21 @@ button:hover {
   letter-spacing: 0.03em;
   color: var(--second-color-text);
 }
-.address {
-  font-style: normal;
-}
+
 .logo-span {
   color: var(--logo-studio);
 }
 .main-index-section-first {
   background-color: var(--background-color1);
+  padding: 188px 0;
 }
 .index-section-first-header {
+  max-width: 496px;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: var(--color-white);
 }
 
 .heading-values {
@@ -125,6 +214,9 @@ button:hover {
   color: var(--logo-studio);
 }
 
+.section-two-padding {
+  padding: 120px 0;
+}
 .header-section-three-index {
   font-size: 36px;
   line-height: 1.11;
@@ -141,16 +233,19 @@ button:hover {
   letter-spacing: 0.02em;
 }
 
+.sfour-padding {
+  padding: 120px 0;
+}
 .section-four-background {
-  background-color: #f4f4fd;
+  background-color: var(--background-color2);
 }
 
 .list-section-four-background {
-  background-color: #ffffff;
+  background-color: var(--color-white);
 }
 
 .section-four-background-fff {
-  background-color: #ffffff;
+  background-color: var(--color-white);
 }
 
 .header-section-four-index {
@@ -168,12 +263,14 @@ button:hover {
 
 .footer-p {
   line-height: 1.5;
-  color: #f4f4fd;
+  color: var(--background-color2);
   letter-spacing: 0.02em;
+  max-width: 264px;
 }
 
 .footer-portfolio {
   background-color: var(--background-color1);
+  padding: 100px 0;
 }
 
 .portfoliobutton {
@@ -188,17 +285,18 @@ button:hover {
 }
 
 .portfoliobutton:hover {
-  color: #ffffff;
-  background-color: #404bbf;
+  color: var(--color-white);
+  background-color: var(--ocean);
 }
 
 .portfoliobutton:focus {
-  color: #ffffff;
-  background-color: #404bbf;
+  color: var(--color-white);
+  background-color: var(--ocean);
 }
 
 .portfolio-p {
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--first-color-text);
@@ -207,160 +305,37 @@ button:hover {
 .specialist-item {
   background-color: var(--bg-color);
 }
-.header-index {
-  border-bottom: 1px solid #e7e9fc;
-}
-.div-header-index,
-.container {
-  display: flex;
-  width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-.nav-header-index {
-  display: flex;
-  align-items: center;
-}
-.logo-link {
-  margin-right: 76px;
-}
-.list {
-  display: flex;
-  gap: 40px;
-}
 
-/* nie wykrywa tutaj */
-.li1-nav-header-index {
-  padding: 24px 0;
-}
-.ul2-address-header-index {
-  display: flex;
-  gap: 40px;
-}
-
-/* Sprawdzanie pierwszej skecji *MAIN*/
-.main-index-section-first {
-  padding: 188px 0;
-}
-.index-section-first-header {
-  max-width: 496px;
-}
-.button-order-service {
-  display: block;
-  min-width: 169px;
-  height: 56px;
-  border: none;
-  background-color: #4d5ae5;
-  border-radius: 4px;
+.image:hover {
   cursor: pointer;
 }
 
-/* Sprawdzanie drugiej sekcji */
-.main-index-section-second {
-  padding: 120px 0;
+.h1-s1 {
+  max-width: 496px;
 }
 
-/* Do ukrycia nagłówka używany jest wzorzec .visually-hidden */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
-.list-class {
-  gap: 24px;
-  display: flex;
-}
-.li-list-class {
-  width: calc((100% - 72px) / 4);
-}
-.heading-values {
-  margin-bottom: 8px;
-}
-
-/* Sprawdzanie trzeciej sekcji */
-.main-index-section-third {
-  padding-bottom: 120px;
-}
-.header-section-three-index {
-  margin-bottom: 72px;
-}
-.thirdlist-class {
-  display: flex;
-  gap: 24px;
-}
-.firstlistpoint {
-  width: calc((100% - 48px) / 3);
-}
-/* Sprawdzanie czwartej sekcji */
-.section-four-background {
-  padding: 120px 0;
-}
-.header-section-four-index {
-  margin-bottom: 72px;
-}
-.fourthlist {
-  display: flex;
-  gap: 24px;
-}
-.section-four-background-fff {
-  width: calc((100% - 72px) / 4);
-  border-radius: 0px 0px 4px 4px;
-}
-.markguerrero {
+.pracownik {
   padding: 32px 0px;
 }
-.heading-values-thirdh {
+
+.pracownik-h-trzy {
   text-align: center;
   margin-bottom: 8px;
 }
-.markscontainerp {
+
+.pracownik-p {
   text-align: center;
-}
-
-/* Sprawdzanie footer */
-.footer-portfolio {
-  padding: 100px 0;
-}
-
-/* Dla linku, w celu dodania mu właściwości blokowych, 
-w klasie ustawiony jest styl display: inline-block; */
-.footerlogolink {
-  display: block;
-  margin-bottom: 16px;
-}
-.highlight-footer {
-  display: inline-block;
-}
-.footer-p {
-  max-width: 264px;
-}
-
-/* PORTFOLIO */
-
-/* Sprawdzanie header na stronie Portfolio */
-
-.portfolioheader {
-  border-bottom: 1px solid #e7e9fc;
-}
-.divheaderportfolio {
-  display: flex;
-}
-.container {
-  width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-.navheaderportfolio {
-  display: flex;
-  align-items: center;
-}
-.logoheaderportfolio {
-  margin-right: 76px;
-}
-.ulheaderportflio {
-  display: flex;
-  gap: 40px;
-}
-.firstliheaderportfolio {
-  padding: 24px 0;
-}
-.addressheaderportfolio {
-  display: flex;
-  gap: 40px;
 }
