@@ -30,10 +30,33 @@ body {
 .header {
   background-color: var(--color-white);
   border-bottom: 1px solid var(--border-bottom-color);
+  margin: 0 auto;
 }
 
 .header-div {
   display: flex;
+  height: 72px;
+}
+
+h1 {
+  margin: 0 auto;
+  padding-bottom: 48px;
+}
+.div-nav-address {
+  gap: 332px;
+}
+.address {
+  font-style: normal;
+  font-weight: 400;
+  padding: 24px 0;
+}
+
+.link-address {
+  color: var(--first-color-text);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 img {
@@ -49,6 +72,7 @@ img {
 .header-nav {
   display: flex;
   align-items: center;
+  padding: 24px 0;
 }
 
 .list {
@@ -119,6 +143,7 @@ button {
   border: none;
   background-color: var(--second-color-text);
   border-radius: 4px;
+  margin: 0 auto;
 }
 
 .button-order-service:active {
@@ -153,18 +178,6 @@ button:hover {
   margin-bottom: 16px;
 }
 
-.address {
-  font-style: normal;
-  font-weight: 400;
-}
-
-.link-address {
-  color: var(--first-color-text);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-}
 .nav-link {
   font-weight: 500;
   font-size: 16px;
@@ -231,6 +244,7 @@ button:hover {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .sfour-padding {
@@ -273,35 +287,6 @@ button:hover {
   padding: 100px 0;
 }
 
-.portfoliobutton {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: var(--second-color-text);
-  background-color: var(--background-color2);
-  cursor: pointer;
-}
-
-.portfoliobutton:hover {
-  color: var(--color-white);
-  background-color: var(--ocean);
-}
-
-.portfoliobutton:focus {
-  color: var(--color-white);
-  background-color: var(--ocean);
-}
-
-.portfolio-p {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--first-color-text);
-}
-
 .specialist-item {
   background-color: var(--bg-color);
 }
@@ -338,4 +323,67 @@ button:hover {
 
 .pracownik-p {
   text-align: center;
+}
+
+.portfolio-section {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.portfolio-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+
+.portfoliobutton {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--second-color-text);
+  background-color: var(--background-color2);
+  cursor: pointer;
+  padding: 12px 24px;
+  border: 1px solid var(--border-bottom-color);
+  border-radius: 4px;
+}
+
+.portfoliobutton:hover {
+  color: var(--color-white);
+  background-color: var(--ocean);
+  border: 1px solid transparent;
+}
+
+.portfoliobutton:focus {
+  color: var(--color-white);
+  background-color: var(--ocean);
+  border: 1px solid transparent;
+}
+
+.portfolio-p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--first-color-text);
+}
+
+.portfolio-list-main {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.portfolio-list-elements {
+  width: calc((100% - 48px) / 3);
+}
+
+.portfolio-list-elements-div {
+  padding: 32px 16px;
+  border: 1px solid var(--border-bottom-color);
+  border-top: none;
 }
