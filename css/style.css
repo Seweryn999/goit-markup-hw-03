@@ -325,12 +325,12 @@ button:hover {
   text-align: center;
 }
 
-.portfolio-section {
+.portfoliosection {
   padding-top: 96px;
   padding-bottom: 120px;
 }
 
-.portfolio-list {
+.portfoliolist {
   display: flex;
   justify-content: center;
   gap: 24px;
