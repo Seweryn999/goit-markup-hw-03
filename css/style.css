@@ -387,3 +387,7 @@ button:hover {
   border: 1px solid var(--border-bottom-color);
   border-top: none;
 }
+.menu-padding:hover,
+.link-address:hover {
+  color: var(--second-color-text);
+}
