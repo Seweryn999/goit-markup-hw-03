@@ -120,6 +120,7 @@ img {
 }
 .menu-padding {
   padding: 24px 0;
+  font-weight: 500;
 }
 
 a {
@@ -154,9 +155,6 @@ button {
   background-color: var(--ocean);
 }
 
-a:hover {
-  color: var(--ocean);
-}
 a:active {
   color: var(--ocean);
 }
@@ -169,7 +167,7 @@ button:hover {
 }
 .link {
   text-decoration: none;
-  font-weight: 500;
+
   color: var(--logo-studio);
 }
 
