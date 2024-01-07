@@ -36,6 +36,7 @@ body {
 .header-div {
   display: flex;
   height: 72px;
+  justify-content: space-between;
 }
 
 h1 {
@@ -119,6 +120,7 @@ img {
   gap: 40px;
 }
 .menu-padding {
+  color: var(--second-color-text);
   padding: 24px 0;
   font-weight: 500;
 }
